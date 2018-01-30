@@ -2,12 +2,12 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python:2.7.10
+      - image: circleci/python:3.6.1
     steps:
       - checkout
   test:
     docker:
-      - image: circleci/python:2.7.10
+      - image: circleci/python:3.6.1
     steps:
       - checkout
 workflows:
